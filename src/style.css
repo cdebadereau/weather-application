@@ -1,0 +1,101 @@
+body {
+  background: #fafafa;
+  font-family: arial;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: "Righteous", cursive;
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 90px;
+  padding-left: 50px;
+}
+
+input {
+  padding-right: 50px;
+}
+
+h3 {
+  padding-top: 15px;
+  font-family: "Righteous", cursive;
+}
+
+.container {
+  margin-top: 30px;
+  width: 70%;
+  padding: 32px 40px 16px;
+  border-radius: 10px;
+  background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  box-shadow: 4px 4px 8px rgba(136, 135, 135, 0.651);
+}
+
+.current-position {
+  margin-left: 22px;
+}
+
+.current-time {
+  text-align: center;
+  margin: 13px;
+  font-size: 23px;
+  font-family: monospace;
+}
+
+.current-weather {
+  padding-left: 104px;
+}
+
+.fa-cloud-sun.current-weather-emoji {
+  font-size: 49px;
+  margin-left: -10px;
+  margin-bottom: 6px;
+}
+
+.weather {
+  font-weight: bold;
+}
+
+.weather-information {
+  line-height: 9px;
+  font-size: 17px;
+  padding-top: 33px;
+}
+
+.fa-cloud-sun,
+.fa-cloud-rain {
+  font-size: 30px;
+  margin: 18px;
+}
+
+.forecast {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.saturday-forecast,
+.sunday-forecast,
+.monday-forecast,
+.tuesday-forecast,
+.wednesday-forecast {
+  padding: 0;
+  margin: 22px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+#units {
+  position: relative;
+  bottom: 100px;
+  left: 167px;
+}
+
+#celsius-link,
+#farhrenheit-link {
+  text-decoration: none;
+}
