@@ -28,77 +28,87 @@
   </head>
   <body>
     <div class="container">
-      <form id="search-form">
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Enter a city"
-          autofocus
-        />
-        <input type="submit" value="Search" class="btn btn-dark" />
-        <button
-          type="button"
-          class="btn btn-primary current-position"
-          id="current-position"
+      <div class="app-container">
+        <form id="search-form">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Enter a city"
+            autofocus
+          />
+          <input type="submit" value="Search" class="btn btn-dark" />
+          <button
+            type="button"
+            class="btn btn-primary current-position"
+            id="current-position"
+          >
+            Current position
+          </button>
+        </form>
+
+        <div class="row">
+          <div class="col-4">
+            <h1></h1>
+          </div>
+          <div class="col-8">
+            <p class="current-time">Friday, 24th Jan, 7:12 PM</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <h2></h2>
+            <span id="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="farhrenheit-link">°F</a>
+            </span>
+          </div>
+          <div class="col-4 current-weather">
+            <i class="fas fa-cloud-sun current-weather-emoji"></i>
+            <p class="weather" id="weather-description">Cloudy</p>
+          </div>
+          <div class="col-3 weather-information">
+            <p><strong>Humidity:</strong><span id="humidity-level"> </span>%</p>
+            <p><strong>Wind:</strong><span id="wind-speed"> </span>km/h</p>
+            <p><strong>18/8°C</strong></p>
+          </div>
+        </div>
+
+        <div class="row forecast">
+          <div class="col saturday-forecast">
+            <h3>Sat</h3>
+            <i class="fas fa-cloud-rain"></i>
+            <p>12°C</p>
+          </div>
+          <div class="col sunday-forecast">
+            <h3>Sun</h3>
+            <i class="fas fa-cloud-rain"></i>
+            <p>12°C</p>
+          </div>
+          <div class="col monday-forecast">
+            <h3>Mon</h3>
+            <i class="fas fa-cloud-rain"></i>
+            <p>12°C</p>
+          </div>
+          <div class="col tuesday-forecast">
+            <h3>Tue</h3>
+            <i class="fas fa-cloud-sun"></i>
+            <p>13°C</p>
+          </div>
+          <div class="col wednesday-forecast">
+            <h3>Wed</h3>
+            <i class="fas fa-cloud-sun"></i>
+            <p>13°C</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <a
+          href="https://github.com/cdebadereau/weather-application"
+          target="_blank"
+          >Open-source code</a
         >
-          Current position
-        </button>
-      </form>
-
-      <div class="row">
-        <div class="col-4">
-          <h1></h1>
-        </div>
-        <div class="col-8">
-          <p class="current-time">Friday, 24th Jan, 7:12 PM</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-4">
-          <h2></h2>
-          <span id="units">
-            <a href="#" id="celsius-link">°C</a> |
-            <a href="#" id="farhrenheit-link">°F</a>
-          </span>
-        </div>
-        <div class="col-4 current-weather">
-          <i class="fas fa-cloud-sun current-weather-emoji"></i>
-          <p class="weather" id="weather-description">Cloudy</p>
-        </div>
-        <div class="col-3 weather-information">
-          <p><strong>Humidity:</strong><span id="humidity-level"> </span>%</p>
-          <p><strong>Wind:</strong><span id="wind-speed"> </span>km/h</p>
-          <p><strong>18/8°C</strong></p>
-        </div>
-      </div>
-
-      <div class="row forecast">
-        <div class="col saturday-forecast">
-          <h3>Sat</h3>
-          <i class="fas fa-cloud-rain"></i>
-          <p>12°C</p>
-        </div>
-        <div class="col sunday-forecast">
-          <h3>Sun</h3>
-          <i class="fas fa-cloud-rain"></i>
-          <p>12°C</p>
-        </div>
-        <div class="col monday-forecast">
-          <h3>Mon</h3>
-          <i class="fas fa-cloud-rain"></i>
-          <p>12°C</p>
-        </div>
-        <div class="col tuesday-forecast">
-          <h3>Tue</h3>
-          <i class="fas fa-cloud-sun"></i>
-          <p>13°C</p>
-        </div>
-        <div class="col wednesday-forecast">
-          <h3>Wed</h3>
-          <i class="fas fa-cloud-sun"></i>
-          <p>13°C</p>
-        </div>
+        by Cyrielle de Badereau de Saint Martin
       </div>
     </div>
     <script src="src/script.js"></script>
